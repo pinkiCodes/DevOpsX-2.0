@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOpsX 2.0</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 25px;
+            background: #182438;
+        }
+
+        h1 {
+            color: #38bdf8;
+        }
+
+        .card {
+            background: #1e293b;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 500px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #message {
+            color: #4ade80;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DevOpsX 2.0</h1>
+        <p>Automate. Deploy. Monitor.</p>
+    </header>
+
+    <div class="card">
+        <h2>Welcome to DevOpsX</h2>
+        <p>Your DevOps automation dashboard is ready!</p>
+        <button onclick="showMessage()">Check System</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "System is ready for DevOps deployment!";
+        }
+    </script>
+</body>
+</html>
