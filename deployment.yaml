@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsx-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devopsx-dashboard
+  template:
+    metadata:
+      labels:
+        app: devopsx-dashboard
+    spec:
+      containers:
+        - name: devopsx-dashboard
+          image: devopsx-dashboard:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
